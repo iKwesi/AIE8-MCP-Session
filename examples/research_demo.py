@@ -1,8 +1,8 @@
 """
-Research Agent Demo
+Adaptive MCP Assistant Demo
 
-Demonstrates the advanced multi-step research assistant with
-conditional routing, quality checks, and retry logic.
+Demonstrates the production-ready multi-step agent with intelligent
+tool selection, quality validation, and MCP integration.
 """
 
 import asyncio
@@ -81,7 +81,7 @@ async def run_demo():
     """Run demo with multiple example queries."""
     
     print("\n" + "🤖" * 40)
-    print("ADVANCED RESEARCH ASSISTANT DEMO")
+    print("ADAPTIVE MCP ASSISTANT DEMO")
     print("Activity #2: LangGraph + MCP Integration")
     print("🤖" * 40)
     

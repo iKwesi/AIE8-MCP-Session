@@ -1,6 +1,6 @@
-# Advanced Research Assistant - Activity #2
+# Adaptive MCP Assistant - Activity #2
 
-A production-ready multi-step research agent built with LangGraph that integrates with the MCP server from Activity #1.
+A production-ready multi-step agent with intelligent tool selection, quality validation, and MCP integration.
 
 ## 🎯 Features
 
@@ -345,4 +345,3 @@ Result: [Direct answer without web search]
 - **MCP Docs**: https://modelcontextprotocol.io
 - **LangGraph Docs**: https://langchain-ai.github.io/langgraph
 - **LangChain MCP Adapters**: https://github.com/langchain-ai/langchain-mcp-adapters
-

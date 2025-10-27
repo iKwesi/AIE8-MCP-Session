@@ -1,8 +1,8 @@
 """
-Advanced Research Agent - Production-Ready Architecture
+Adaptive MCP Assistant - Production-Ready Architecture
 
-Complete workflow with intelligent tool selection, quality validation,
-retry logic, and professional output formatting.
+An intelligent agent that adapts its workflow based on query type,
+integrating MCP tools with quality assurance and retry logic.
 """
 
 import logging
