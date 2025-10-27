@@ -9,10 +9,13 @@ source = { virtual = "." }
 dependencies = [
     { name = "anthropic" },
     { name = "fastmcp" },
+    { name = "langchain-core" },
+    { name = "langchain-mcp-adapters" },
     { name = "langgraph" },
     { name = "mcp", extra = ["cli"] },
     { name = "numpy" },
     { name = "openai" },
+    { name = "pydantic-settings" },
     { name = "python-dotenv" },
     { name = "tavily-python" },
 ]
@@ -21,10 +24,13 @@ dependencies = [
 requires-dist = [
     { name = "anthropic", specifier = ">=0.71.0" },
     { name = "fastmcp", specifier = ">=2.13.0" },
+    { name = "langchain-core", specifier = ">=0.3.51" },
+    { name = "langchain-mcp-adapters", specifier = ">=0.1.11" },
     { name = "langgraph", specifier = ">=0.3.27" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.6.0" },
     { name = "numpy", specifier = ">=2.2.4" },
     { name = "openai", specifier = ">=1.72.0" },
+    { name = "pydantic-settings", specifier = ">=2.8.1" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "tavily-python", specifier = ">=0.5.4" },
 ]
@@ -594,6 +600,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/6e/24/74dfce829f63aaf09885ae569121335a62ecfa5043a35d9e819cd0e046f0/langchain_core-0.3.51.tar.gz", hash = "sha256:db76b9cc331411602cb40ba0469a161febe7a0663fbcaddbc9056046ac2d22f4", size = 542003, upload-time = "2025-04-04T13:56:51.038Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a9/bf/3464d759bf8687a3bbdfeb9af2f2aeb0a265c6d5ef5fd9274c2a70449f77/langchain_core-0.3.51-py3-none-any.whl", hash = "sha256:4bd71e8acd45362aa428953f2a91d8162318014544a2216e4b769463caf68e13", size = 423303, upload-time = "2025-04-04T13:56:48.862Z" },
+]
+
+[[package]]
+name = "langchain-mcp-adapters"
+version = "0.1.11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "mcp" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ac/4e/b84af2e379edfb51db78edcfc6eab7dca798f2ce9d74b73e29f5f207685c/langchain_mcp_adapters-0.1.11.tar.gz", hash = "sha256:a217c49086b162344749f7f99a148fc12482e2da8e0260b2e35fc93afb31b38d", size = 23061, upload-time = "2025-10-03T14:53:13.98Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1e/cc/5f9b23cce308b2c30246e31712bf1a53ae49d97bab8b3d9bc9cfe364f82c/langchain_mcp_adapters-0.1.11-py3-none-any.whl", hash = "sha256:7b35921e9487bcb3ea3d94bf10341316ac897e2997e8a16032ae514834a9685d", size = 15751, upload-time = "2025-10-03T14:53:12.358Z" },
 ]
 
 [[package]]
