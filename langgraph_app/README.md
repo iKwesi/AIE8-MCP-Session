@@ -62,12 +62,12 @@ graph TD
     F -->|give_up: count ≥ 2| E
     E --> END([END])
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#f0e1ff
-    style D fill:#ffe1e1
-    style F fill:#fff0e1
-    style E fill:#e1ffe1
+    style A fill:#e1f5ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style B fill:#fff4e1,stroke:#cc8800,stroke-width:2px,color:#000
+    style C fill:#f0e1ff,stroke:#8800cc,stroke-width:2px,color:#000
+    style D fill:#ffe1e1,stroke:#cc0000,stroke-width:2px,color:#000
+    style F fill:#fff0e1,stroke:#cc6600,stroke-width:2px,color:#000
+    style E fill:#e1ffe1,stroke:#00cc00,stroke-width:2px,color:#000
 ```
 
 ### Workflow Description
