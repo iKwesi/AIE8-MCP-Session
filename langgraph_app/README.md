@@ -48,6 +48,30 @@ langgraph_app/
 
 ## 🔄 Complete Workflow
 
+### Visual Diagram
+
+```mermaid
+graph TD
+    START([START]) --> A[analyze_query_node]
+    A -->|Creates execution plan| B[tool_executor_node]
+    B -->|Executes tools| C[synthesize_with_claude_node]
+    C -->|Creates coherent answer| D[quality_check_node]
+    D -->|pass: score ≥ 7.0| E[format_output_node]
+    D -->|retry: score < 7.0| F[retry_handler_node]
+    F -->|retry: count < 2| A
+    F -->|give_up: count ≥ 2| E
+    E --> END([END])
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#f0e1ff
+    style D fill:#ffe1e1
+    style F fill:#fff0e1
+    style E fill:#e1ffe1
+```
+
+### Workflow Description
+
 ```
 START
   ↓
@@ -339,9 +363,53 @@ Tools: ask_specialized_claude(general)
 Result: [Direct answer without web search]
 ```
 
+## 🎨 Visualization
+
+### Generate PNG Diagram
+
+Run the visualization script to generate a PNG diagram:
+
+```bash
+uv run python visualize_graph.py
+```
+
+This creates `langgraph_app/workflow_diagram.png` showing the complete graph structure.
+
+**Note:** Requires graphviz: `brew install graphviz`
+
+### LangGraph Studio (Interactive Visualization)
+
+For interactive visualization and debugging:
+
+1. **Install LangGraph Studio:**
+   ```bash
+   pip install langgraph-studio
+   ```
+
+2. **Run Studio:**
+   ```bash
+   langgraph dev
+   ```
+
+3. **Open in browser:** http://localhost:8123
+
+4. **Test queries interactively:**
+   - Type: "roll a dice 5 times"
+   - Watch nodes execute in real-time
+   - Inspect state at each step
+   - See tool calls and results
+
+**Features:**
+- ✅ Visual graph with execution highlighting
+- ✅ State inspection at each node
+- ✅ Step-through debugging
+- ✅ Interactive query testing
+- ✅ Perfect for screenshots and demos
+
 ## 🔗 Related
 
 - **Activity #1**: MCP Server (`server.py`, `tools/`, `core/`)
 - **MCP Docs**: https://modelcontextprotocol.io
 - **LangGraph Docs**: https://langchain-ai.github.io/langgraph
 - **LangChain MCP Adapters**: https://github.com/langchain-ai/langchain-mcp-adapters
+- **LangGraph Studio**: https://github.com/langchain-ai/langgraph-studio
