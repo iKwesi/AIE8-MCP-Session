@@ -17,3 +17,6 @@ dependencies = [
     "python-dotenv>=1.1.0",
     "tavily-python>=0.5.4",
 ]
+
+[tool.setuptools]
+packages = ["langgraph_app", "core", "tools", "utils"]

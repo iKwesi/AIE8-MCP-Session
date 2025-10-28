@@ -1,7 +1,7 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "adaptive_mcp_assistant": "./langgraph_app/agent.py:create_research_agent"
+    "adaptive_mcp_assistant": "langgraph_app.studio_graph:create_studio_graph"
   },
   "env": ".env"
 }
