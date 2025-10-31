@@ -3,6 +3,10 @@
      height="auto"/>
 </p>
 
+<a href="https://glama.ai/mcp/servers/@iKwesi/AIE8-MCP-Session">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@iKwesi/AIE8-MCP-Session/badge" alt="Tavily Web Search Server MCP server" />
+</a>
+
 ## <h1 align="center" id="heading">AI Makerspace: MCP Session Repo for Session 13</h1>
 
 This project is a demonstration of the MCP (Model Context Protocol) server, which utilizes the Tavily API for web search capabilities. The server is designed to run in a standard input/output (stdio) transport mode.
